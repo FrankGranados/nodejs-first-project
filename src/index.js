@@ -12,7 +12,6 @@ ejs es un motor de plantillas para integrar código en los html. Dentro de la ca
 paginas que renderizamos en nuestro server, y en la carpeta partials estan los elementos que se repetiran en diferentes
 paginas. Con ejs podemos tener una navegacion y un footer en cada pagina sin necesidad de reescrbir el código.
 */
-
 /*=================================================
 App*/
 const app = express();
@@ -30,8 +29,8 @@ app.use(express.static(join(__dirname, "public") )); //Indica la carpeta de arch
 Routing*/
 /*Normalmente aqui estarian las rutas de express, pero con el fin de tener un código mas limpio estas rutas se importan de un modulo.
 usando la linea app.use(indexRoutes), traemos las rutas de un archivo externo que esta en la carpeta "routes" */
-
 /*=================================================
 Server*/
 app.listen(process.env.PORT || 3000);
 console.log("Server is listening on port", process.env.PORT || 3000);
+console.log('Hello world')
